@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Onomatopoeia Matrix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui-container">
+        <div class="glass-panel text-monitor">
+            <header>
+                <span class="panel-title">PHYSICAL MONITOR</span>
+            </header>
+            
+            <form id="word-form">
+                <input type="text" id="word-input" placeholder="入力..." autocomplete="off">
+            </form>
+
+            <div class="vector-text-display">
+                <div class="row">
+                    Weight: <span id="v-x1">0</span> 
+                    Time: <span id="v-x2">0</span> 
+                    Space: <span id="v-x3">0</span> 
+                    Flow: <span id="v-x4">0</span>
+                </div>
+                <div class="row">
+                    Hardness: <span id="v-x5">0</span> 
+                    Moisture: <span id="v-x6">0</span> 
+                    Hz: <span id="v-x7">0</span> 
+                    Decay: <span id="v-x8">0</span>
+                </div>
+                <div class="row">
+                    Re: <span id="v-x9">0</span> 
+                    Bo: <span id="v-x10">0</span> 
+                    Temp: <span id="v-x11">0</span> 
+                    Color: <span id="v-x12" class="color-inline"></span>
+                </div>
+            </div>
+            
+            <div id="status-text">DATA RECEIVED...</div>
+        </div>
+        <div class="footer-hint">DRAG: ROTATE • SCROLL: ZOOM</div>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
