@@ -5,7 +5,7 @@ const app = express();
 const PORT = 8082;
 
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static(__dirname));
 
 let systemPrompt = "";
 const promptPath = path.join(__dirname, 'onomatopoeia_prompt.txt');
